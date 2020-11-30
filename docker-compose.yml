@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coredockersample:
+    image: ${DOCKER_REGISTRY-}coredockersample
+    build:
+      context: .
+      dockerfile: CoreDockerSample/Dockerfile
